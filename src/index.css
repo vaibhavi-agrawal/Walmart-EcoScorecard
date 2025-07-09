@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom fade-in animation */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s ease both;
+  }
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .hover-lift:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px 0 rgba(34,197,94,0.18), 0 2px 8px 0 rgba(0,0,0,0.08);
+    transition: all 0.2s cubic-bezier(.4,0,.2,1);
+  }
+  .soft-shadow {
+    box-shadow: 0 4px 24px 0 rgba(34,197,94,0.10), 0 1.5px 6px 0 rgba(0,0,0,0.06);
+  }
+  .section-divider {
+    border-bottom: 2px dashed #bbf7d0;
+    margin: 2.5rem 0;
+  }
+  .green-glow {
+    box-shadow: 0 0 24px 0 #6ee7b7, 0 1.5px 6px 0 rgba(0,0,0,0.06);
+  }
+  .bg-dots {
+    background-image: radial-gradient(rgba(34,197,94,0.10) 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+  }
+  .bg-leafy {
+    background-image: url('./assets/leaves-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-overlay {
+    background: rgba(255,255,255,0.65);
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.22);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 1.7rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.32);
+} 
