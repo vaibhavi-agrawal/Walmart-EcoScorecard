@@ -177,3 +177,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.bg-slide5 {
+  background-image: url('./assets/slide5.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

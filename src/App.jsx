@@ -102,24 +102,8 @@ function App() {
         </Element>
 
         {/* 5️⃣ Refer a Friend & Earn */}
-        <Element name="refer" id="refer" className="relative min-h-screen flex flex-col justify-center items-center px-4 bg-ewaste animate-fade-in overflow-hidden">
-          {/* People SVG background */}
-          <svg className="absolute left-0 top-0 w-1/3 h-1/3 pointer-events-none select-none" viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="100" fill="#bbf7d0" fillOpacity="0.18"/></svg>
-          <section className="w-full max-w-2xl rounded-3xl shadow-2xl p-10 flex flex-col items-center animate-fade-in relative z-10 text-white">
-            <h2 className="text-4xl font-bold text-green-700 mb-4 flex items-center gap-2"><span role="img" aria-label="handshake">🤝</span> Refer a Friend & Earn</h2>
-            <img src="https://www.svgrepo.com/show/354265/eco-people.svg" alt="Eco People" className="w-16 h-16 mb-2" />
-            <p className="text-green-900 text-center mb-3 text-lg font-medium">Invite friends, share your link, and earn rewards!</p>
-            <div className="flex w-full max-w-xs mb-2">
-              <input
-                type="text"
-                value="https://ecoapp.com/invite/yourcode"
-                readOnly
-                className="flex-1 px-3 py-2 border border-green-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-green-400 bg-white/80 font-mono text-green-700"
-              />
-              <button className="bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white px-6 py-2 rounded-r-full font-bold hover:scale-105 active:scale-95 transition-all focus:outline-none focus:ring-2 focus:ring-green-400 shadow-lg">Copy Link</button>
-            </div>
-            <div className="mt-2 text-base text-green-700 italic animate-fade-in delay-200">Priya earned ₹200 voucher!</div>
-          </section>
+        <Element name="refer" id="refer" className="relative min-h-screen flex flex-col justify-center items-center px-4 bg-slide5 animate-fade-in overflow-hidden">
+          {/* No text or content, only background image */}
         </Element>
 
         {/* 6️⃣ Leaderboard */}
