@@ -82,79 +82,23 @@ function App() {
         <div className="h-16" />
 
         {/* 1️⃣ Landing Page (Hero Section) */}
-        <Element name="hero" id="hero" className="relative min-h-screen flex flex-col justify-center items-center text-center px-4 bg-ewaste animate-fade-in overflow-hidden">
-          {/* Removed SVG background and icon image */}
-          <div className="p-10 md:p-16 flex flex-col items-center shadow-2xl relative z-10 text-white">
-            <h1 className="text-6xl md:text-7xl font-extrabold mb-6 drop-shadow-lg tracking-tight animate-fade-in">
-              Powering a Greener Future with Every Choice
-            </h1>
-            <p className="text-3xl md:text-4xl mb-12 animate-fade-in delay-100">
-              Join us in making every purchase planet-friendly. Explore sustainable products, track your eco impact, and earn rewards.
-            </p>
-          </div>
+        <Element name="hero" id="hero" className="relative min-h-screen flex flex-col justify-center items-center text-center px-4 bg-slide1 animate-fade-in overflow-hidden">
+          {/* No text or content, only background image */}
         </Element>
 
         {/* 2️⃣ Your Eco Stats (Streak + Points) */}
-        <Element name="stats" id="stats" className="relative min-h-screen flex flex-col justify-center items-center px-4 bg-ewaste animate-fade-in overflow-hidden">
-          {/* Abstract SVG background */}
-          <svg className="absolute right-0 top-0 w-1/2 h-1/2 pointer-events-none select-none" viewBox="0 0 400 400" fill="none"><circle cx="200" cy="200" r="200" fill="#bbf7d0" fillOpacity="0.3"/></svg>
-          <section className="w-full max-w-3xl rounded-3xl shadow-2xl p-10 flex flex-col md:flex-row items-center justify-between gap-10 animate-fade-in relative z-10 text-white">
-            <div className="flex flex-col items-center group">
-              <span className="text-6xl font-extrabold text-green-700 flex items-center gap-2 group-hover:scale-110 transition-transform">
-                {ecoPoints}
-                <span role="img" aria-label="leaf">🌿</span>
-              </span>
-              <span className="text-gray-500 text-lg mt-1">Points Earned</span>
-            </div>
-            <div className="flex flex-col items-center group">
-              <span className="text-3xl font-bold text-orange-600 flex items-center gap-2 group-hover:scale-110 transition-transform">
-                {ecoStreak}-day eco streak <span role="img" aria-label="fire">🔥</span>
-              </span>
-            </div>
-            <div className="flex gap-2">
-              {badges.map((badge) => (
-                <span key={badge.name} className={`text-sm text-white px-4 py-2 rounded-full ${badge.color} font-bold shadow group-hover:scale-110 transition-transform`}>
-                  {badge.name}
-                </span>
-              ))}
-            </div>
-          </section>
+        <Element name="stats" id="stats" className="relative min-h-screen flex flex-col justify-center items-center px-4 bg-slide2 animate-fade-in overflow-hidden">
+          {/* No text or content, only background image */}
         </Element>
 
         {/* 3️⃣ Eco Tip of the Week */}
-        <Element name="tip" id="tip" className="relative min-h-screen flex flex-col justify-center items-center px-4 bg-ewaste animate-fade-in overflow-hidden">
-          {/* Light pattern SVG */}
-          <svg className="absolute left-0 bottom-0 w-1/2 h-1/2 pointer-events-none select-none" viewBox="0 0 400 400" fill="none"><rect x="0" y="0" width="400" height="400" fill="#bbf7d0" fillOpacity="0.15"/><circle cx="100" cy="300" r="60" fill="#bbf7d0" fillOpacity="0.2"/></svg>
-          <section className="w-full max-w-2xl rounded-3xl shadow-2xl p-10 flex flex-col items-center animate-fade-in relative z-10 text-white">
-            <h2 className="text-4xl font-bold text-green-700 mb-4 flex items-center gap-2"><span role="img" aria-label="bulb">💡</span> Eco Tip of the Week</h2>
-            <img src="https://www.svgrepo.com/show/354263/eco-globe.svg" alt="Eco Globe" className="w-16 h-16 mb-2" />
-            <p className="text-green-900 text-center mb-2 text-xl font-medium">“{ecoTip.tip}”</p>
-            <span className="text-sm text-gray-500 mb-4">— {ecoTip.author}</span>
-            <div className="flex gap-3">
-              <button className="bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white px-6 py-2 rounded-full text-base font-bold shadow-lg transition-all hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-green-400">Read More</button>
-              <button className="bg-white border-2 border-green-600 text-green-700 px-6 py-2 rounded-full text-base font-bold hover:bg-green-50 hover:scale-105 active:scale-95 transition-all focus:outline-none focus:ring-2 focus:ring-green-400 shadow-lg">Submit Your Own Tip</button>
-            </div>
-          </section>
+        <Element name="tip" id="tip" className="relative min-h-screen flex flex-col justify-center items-center px-4 bg-slide3 animate-fade-in overflow-hidden">
+          {/* No text or content, only background image */}
         </Element>
 
         {/* 4️⃣ Carbon Footprint Reduction */}
-        <Element name="carbon" id="carbon" className="relative min-h-screen flex flex-col justify-center items-center px-4 bg-ewaste animate-fade-in overflow-hidden">
-          {/* Earth SVG background */}
-          <svg className="absolute right-0 top-0 w-1/3 h-1/3 pointer-events-none select-none" viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="100" fill="#6ee7b7" fillOpacity="0.18"/></svg>
-          <section className="w-full max-w-2xl rounded-3xl shadow-2xl p-10 flex flex-col items-center animate-fade-in relative z-10 text-white">
-            <h2 className="text-4xl font-bold text-green-700 mb-4 flex items-center gap-2"><span role="img" aria-label="earth">🌍</span> Carbon Footprint Reduction</h2>
-            <img src="https://www.svgrepo.com/show/354264/eco-planet.svg" alt="Eco Planet" className="w-20 h-20 mb-2" />
-            <div className="w-full flex flex-col items-center">
-              <div className="w-44 h-44 relative flex items-center justify-center mb-4 group">
-                <svg className="absolute top-0 left-0" width="176" height="176">
-                  <circle cx="88" cy="88" r="78" stroke="#e5e7eb" strokeWidth="16" fill="none" />
-                  <circle cx="88" cy="88" r="78" stroke="#34d399" strokeWidth="16" fill="none" strokeDasharray={490} strokeDashoffset={490 - (carbonReduced / 20) * 490} strokeLinecap="round" />
-                </svg>
-                <span className="text-4xl font-extrabold text-green-700 z-10 group-hover:scale-110 transition-transform">{carbonReduced} kg</span>
-              </div>
-              <span className="text-green-800 text-lg font-medium">You've reduced {carbonReduced} kg CO₂ this month!</span>
-            </div>
-          </section>
+        <Element name="carbon" id="carbon" className="relative min-h-screen flex flex-col justify-center items-center px-4 bg-sli4 animate-fade-in overflow-hidden">
+          {/* No text or content, only background image */}
         </Element>
 
         {/* 5️⃣ Refer a Friend & Earn */}
@@ -179,27 +123,8 @@ function App() {
         </Element>
 
         {/* 6️⃣ Leaderboard */}
-        <Element name="leaderboard" id="leaderboard" className="relative min-h-screen flex flex-col justify-center items-center px-4 bg-ewaste animate-fade-in overflow-hidden">
-          {/* Trophy SVG background */}
-          <svg className="absolute right-0 bottom-0 w-1/3 h-1/3 pointer-events-none select-none" viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="100" fill="#facc15" fillOpacity="0.12"/></svg>
-          <section className="w-full max-w-2xl rounded-3xl shadow-2xl p-10 flex flex-col items-center animate-fade-in relative z-10 text-white">
-            <h2 className="text-4xl font-bold text-green-700 mb-4 flex items-center gap-2"><span role="img" aria-label="trophy">🏆</span> Leaderboard</h2>
-            <img src="https://www.svgrepo.com/show/354266/eco-trophy.svg" alt="Eco Trophy" className="w-16 h-16 mb-2" />
-            <ol className="w-full mb-4">
-              {leaderboard.map((user, idx) => (
-                <li key={user.name} className="flex items-center justify-between py-3 px-5 rounded-xl mb-2 bg-green-100/70 hover:bg-green-200 transition-all group shadow">
-                  <span className="flex items-center gap-2">
-                    {idx === 0 && <span role="img" aria-label="gold">🥇</span>}
-                    {idx === 1 && <span role="img" aria-label="silver">🥈</span>}
-                    {idx === 2 && <span role="img" aria-label="bronze">🥉</span>}
-                    <span className="font-bold group-hover:text-green-700 transition-colors text-lg">{user.name}</span>
-                  </span>
-                  <span className="font-extrabold text-green-700 group-hover:scale-110 transition-transform text-xl">{user.points}</span>
-                </li>
-              ))}
-            </ol>
-            <div className="text-green-800 text-lg animate-fade-in delay-200">You're ranked <span className="font-bold">#{userRank}</span> — Keep it up!</div>
-          </section>
+        <Element name="leaderboard" id="leaderboard" className="relative min-h-screen flex flex-col justify-center items-center px-4 bg-sli6 animate-fade-in overflow-hidden">
+          {/* No text or content, only background image */}
         </Element>
       </div>
     </div>

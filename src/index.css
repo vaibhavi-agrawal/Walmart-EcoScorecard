@@ -121,3 +121,59 @@ body {
   font-family: 'Inter', sans-serif;
   color: white; /* ✅ Global white text */
 }
+
+.bg-slide1 {
+  background-image: url('./assets/slide1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-slide2 {
+  background-image: url('./assets/slide2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-slide4 {
+  background-image: url('./assets/slide4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-slide3 {
+  background-image: url('./assets/slide3.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-slide6 {
+  background-image: url('./assets/slide6.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-sli4 {
+  background-image: url('./assets/sli4.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-sli6 {
+  background-image: url('./assets/slide6.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
